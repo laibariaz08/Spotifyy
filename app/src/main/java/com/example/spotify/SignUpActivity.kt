@@ -8,20 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.signup)
 
         // Find the button by ID
         val btnSignUpFree: Button = findViewById(R.id.signupButton)
         btnSignUpFree.setOnClickListener {
             // Navigate to SignUpFreeActivity
-            val intent = Intent(this, SignUpFreeActivity::class.java)
+            val intent = Intent(this, SignUpFree::class.java)
             startActivity(intent)
         }
 
         val btnSignUpLogin: Button = findViewById(R.id.signupLogInButton)
         btnSignUpLogin.setOnClickListener {
             // Navigate to SignUpFreeActivity
-            val intent = Intent(this, LogInActivity::class.java)
+            val intent = Intent(this, LogIn::class.java)
             startActivity(intent)
         }
     }

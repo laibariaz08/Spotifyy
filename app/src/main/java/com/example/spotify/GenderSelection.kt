@@ -7,10 +7,10 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class GenderSelectionActivity : AppCompatActivity() {
+class GenderSelection : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gender_selection)
+        setContentView(R.layout.gender_selection)
 
         val backArrow: ImageView = findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
@@ -24,19 +24,19 @@ class GenderSelectionActivity : AppCompatActivity() {
         // Set click listeners for the buttons
         button1.setOnClickListener {
             // Navigate to Activity1
-            val intent = Intent(this, PrivacyPolicyActivity::class.java)
+            val intent = Intent(this, PrivacyPolicy::class.java)
             startActivity(intent)
         }
 
         button2.setOnClickListener {
             // Navigate to Activity2
-            val intent = Intent(this, PrivacyPolicyActivity::class.java)
+            val intent = Intent(this, PrivacyPolicy::class.java)
             startActivity(intent)
         }
 
         button3.setOnClickListener {
             // Navigate to Activity3
-            val intent = Intent(this, PrivacyPolicyActivity::class.java)
+            val intent = Intent(this, PrivacyPolicy::class.java)
             startActivity(intent)
         }
 

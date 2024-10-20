@@ -21,6 +21,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AccountActivity" android:exported="true"/>
+        <activity android:name=".CreatePassword" android:exported="true"/>
+        <activity android:name=".FirstFragment" android:exported="true"/>
+        <activity android:name=".GenderSelection" android:exported="true"/>
+        <activity android:name=".HomeFragment" android:exported="true"/>
+        <activity android:name=".LibraryFragment" android:exported="true"/>
+        <activity android:name=".LogIn" android:exported="true"/>
+        <activity android:name=".PremiumFragment" android:exported="true"/>
+        <activity android:name=".PrivacyPolicy" android:exported="true"/>
+        <activity android:name=".ProfileFragment" android:exported="true"/>
+        <activity android:name=".SearchFragment" android:exported="true"/>
+        <activity android:name=".SecondFragment" android:exported="true"/>
+        <activity android:name=".SignUpActivity" android:exported="true"/>
+        <activity android:name=".SignUpFree" android:exported="true"/>
+        <activity android:name=".SplashActivity" android:exported="true"/>
     </application>
 
 </manifest>

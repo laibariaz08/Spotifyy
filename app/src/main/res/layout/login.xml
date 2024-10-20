@@ -6,6 +6,14 @@
     android:background="#121212"
     android:padding="24dp">
 
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Back Arrow"
+        android:layout_marginTop="10dp"/>
+
     <!-- Logo or Title -->
     <TextView
         android:id="@+id/tv_logo"

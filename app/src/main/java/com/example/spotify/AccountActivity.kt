@@ -7,20 +7,21 @@ import android.widget.ImageView
 
 import androidx.appcompat.app.AppCompatActivity
 
-class CreatePasswordActivity : AppCompatActivity()
+class AccountActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_password)
+        setContentView(R.layout.add_account)
 
-        val backArrow: ImageView = findViewById(R.id.backArrow)
+
+        val backArrow: ImageView = findViewById(R.id.Cancel)
         backArrow.setOnClickListener {
             finish()
         }
 
-        val btnSignUpLogin: Button = findViewById(R.id.nextButton)
+        val btnSignUpLogin: Button = findViewById(R.id.signupButton)
         btnSignUpLogin.setOnClickListener {
-            val intent = Intent(this, GenderSelectionActivity::class.java)
+            val intent = Intent(this, SignUpFree::class.java)
             startActivity(intent)
         }
     }

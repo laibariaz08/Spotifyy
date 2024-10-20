@@ -1,27 +1,25 @@
 package com.example.spotify
 
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 
+import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class AddAccountActivity : AppCompatActivity()
-{
+class SignUpFree : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_account)
+        setContentView(R.layout.activity_sign_up_free)
 
-
-        val backArrow: ImageView = findViewById(R.id.Cancel)
+        val backArrow: ImageView = findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
             finish()
         }
 
-        val btnSignUpLogin: Button = findViewById(R.id.signupButton)
+        val btnSignUpLogin: Button = findViewById(R.id.nextButton)
         btnSignUpLogin.setOnClickListener {
-            val intent = Intent(this, SignUpFreeActivity::class.java)
+            val intent = Intent(this, CreatePassword::class.java)
             startActivity(intent)
         }
     }

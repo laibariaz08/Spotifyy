@@ -5,11 +5,11 @@ import android.widget.ImageView
 
 import androidx.appcompat.app.AppCompatActivity
 
-class LogInActivity : AppCompatActivity()
+class LogIn : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_log_in)
+        setContentView(R.layout.login)
 
         val backArrow: ImageView = findViewById(R.id.backArrow)
         backArrow.setOnClickListener {
