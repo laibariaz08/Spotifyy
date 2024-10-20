@@ -6,19 +6,29 @@
     android:padding="24dp">
 
     <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Back Arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="10dp"/>
+    <ImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/profile_picture"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="52dp" />
 
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/profile_image"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:layout_marginLeft="32dp"
         android:text="Asiya Islam"
         android:textSize="34sp"
@@ -50,7 +60,7 @@
         android:layout_width="30dp"
         android:layout_height="50dp"
         android:layout_marginStart="18dp"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="185dp"
         android:layout_toRightOf="@id/edit_button"
         android:contentDescription="Menu"
         android:src="@drawable/dots" />
@@ -68,3 +78,5 @@
         android:textStyle="bold" />
 
 </RelativeLayout>
+
+
