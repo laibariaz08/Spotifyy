@@ -1,15 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".PremiumFragment">
+    android:fillViewport="true"
+    android:background="#121212">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PREMIUM FRAGMENT" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 1"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 2"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 3"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <!-- More TextViews to demonstrate scrolling -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 4"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 5"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 6"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 7"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent 8"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+</ScrollView>

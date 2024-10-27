@@ -2,28 +2,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#000000"
+    >
 
     <!-- Back button at the top left corner -->
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_back_arrow"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="19dp"
+        android:src="@drawable/arrow_head"
         android:contentDescription="Back"
         android:layout_gravity="top|start"/>
 
     <!-- Search prompt text at the top center -->
-    <TextView
+    <EditText
         android:id="@+id/searchPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What do you want to listen to?"
+        android:layout_width="330dp"
+        android:layout_height="32dp"
+        android:text="     Search Your Library"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="28dp"
+        android:background="#808080"
+        android:alpha="0.8"/>
 
     <!-- Centralized main text and description -->
     <LinearLayout
@@ -37,7 +42,7 @@
             android:id="@+id/mainText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play what you love"
+            android:text="Find your favorites"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -47,7 +52,7 @@
             android:id="@+id/descriptionText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Search for artists, songs, playlists, and more."
+            android:text="Search everything you've saved, followed, or\n                                created."
             android:textColor="#B3B3B3"
             android:textSize="16sp"/>
     </LinearLayout>
