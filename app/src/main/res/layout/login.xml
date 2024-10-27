@@ -36,7 +36,7 @@
         android:background="#808080"
         android:padding="16dp"
         android:textColor="#FFFFFF"
-        android:elevation="4dp" />
+        android:elevation="48dp" />
 
     <TextView
         android:id="@+id/Password"
@@ -59,7 +59,7 @@
         android:background="#808080"
         android:padding="16dp"
         android:textColor="#FFFFFF"
-        android:elevation="4dp" />
+        android:elevation="48dp" />
 
     <!-- Login Button -->
     <Button
