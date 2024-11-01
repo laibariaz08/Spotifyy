@@ -1,55 +1,173 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- Back button at the top left corner -->
-    <ImageView
-        android:id="@+id/backButton"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_back_arrow"
-        android:contentDescription="Back"
-        android:layout_gravity="top|start"/>
-
-    <!-- Search prompt text at the top center -->
-    <TextView
-        android:id="@+id/searchPrompt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What do you want to listen to?"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_gravity="top|center_horizontal"
-        android:layout_marginTop="16dp"/>
-
-    <!-- Centralized main text and description -->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:background="@color/black"
+        android:padding="16dp">
 
-        <TextView
-            android:id="@+id/mainText"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/top_section"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Play what you love"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"/>
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#000000"
+            tools:ignore="MissingConstraints">
 
-        <TextView
-            android:id="@+id/descriptionText"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/button_circle"
+                android:layout_width="40dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/circular_button"
+                android:text="L"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="0dp" />
+
+            <TextView
+                android:id="@+id/searchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="17dp" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="70dp"
+                android:layout_height="39dp"
+                android:contentDescription="Search"
+                android:src="@drawable/ic_camera"
+                android:layout_marginLeft="120dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <!-- Search Input & Button -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Search for artists, songs, playlists, and more."
-            android:textColor="#B3B3B3"
-            android:textSize="16sp"/>
+            android:layout_marginTop="20dp">
+
+            <!-- Search EditText -->
+            <EditText
+                android:id="@+id/searchET"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/white"
+                android:hint="What do you want to listen to?"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/SearchBtn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/SearchBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_search"
+                android:contentDescription="Search"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Browse All Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browse All"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:paddingTop="19dp" />
+
+                <!-- Image Slider ViewPager -->
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Top Genres"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:paddingTop="19dp" />
+
+                <!-- Image Buttons -->
+                <ImageView
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bu"
+                    android:contentDescription="Hip-Hop" />
+
+                <ImageView
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/des_00000"
+                    android:contentDescription="Desi" />
+
+                <ImageView
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pop"
+                    android:contentDescription="Pop" />
+
+                <ImageView
+                    android:id="@+id/imageButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fyp_00000"
+                    android:contentDescription="Recommendations" />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-
 </FrameLayout>

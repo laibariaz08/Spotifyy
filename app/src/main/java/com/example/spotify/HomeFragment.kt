@@ -1,16 +1,14 @@
 package com.example.spotify
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 import android.widget.Button
-import android.widget.LinearLayout
+import androidx.core.view.GravityCompat
 
 class HomeFragment : Fragment() {
 
@@ -22,8 +20,18 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.home_page, container, false)
+        val view = inflater.inflate(R.layout.home_page, container, false)
+
+        // Initialize drawerLayout and navView
+        drawerLayout = view.findViewById(R.id.drawer_layout)
+        navView = view.findViewById(R.id.nav_view)
+
+        // Set up the circle button to open the drawer
+        val circleButton: Button = view.findViewById(R.id.button_circle)
+        circleButton.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
+        return view
     }
-
-
 }

@@ -21,12 +21,6 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Use the view object to find views inside the fragment
-        val backArrow: ImageView = view.findViewById(R.id.backButton)
 
-        // Set click listener
-        backArrow.setOnClickListener {
-            // Close the parent activity
-            requireActivity().finish()
-        }
     }
 }
