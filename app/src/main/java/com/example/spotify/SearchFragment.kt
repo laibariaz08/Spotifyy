@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.content.Intent
+
 
 class SearchFragment : Fragment() {
 
@@ -13,14 +15,19 @@ class SearchFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_search, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val myImageView: ImageView = view.findViewById(R.id.atif_aslam)
 
-        // Use the view object to find views inside the fragment
-
+        // Set an OnClickListener to open the new activity
+        myImageView.setOnClickListener {
+            val intent = Intent(activity, musicPlayerActivity::class.java)
+            startActivity(intent)
+        }
     }
+
+
 }

@@ -19,6 +19,7 @@
 
         <!-- Settings Title -->
         <ImageView
+            android:id="@+id/backArrow"
             android:layout_width="50dp"
             android:layout_height="61dp"
             android:layout_gravity="start"

@@ -15,11 +15,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
-
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
         </activity>
 
         <activity
@@ -47,6 +42,12 @@
         <activity android:name=".SignUpActivity" android:exported="true"/>
         <activity android:name=".SignUpFree" android:exported="true"/>
         <activity android:name=".search_library_activity" android:exported="true"/>
+        <activity android:name=".AddAccountActivity"/>
+        <activity android:name=".WhatsNewActivity"/>
+        <activity android:name=".ListeningHistoryActivity"/>
+        <activity android:name=".SettingsAndPrivacyActivity"/>
+        <activity android:name=".musicPlayerActivity"/>
+
 
     </application>
 

@@ -1,7 +1,9 @@
 package com.example.spotify
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
@@ -32,6 +34,35 @@ class HomeFragment : Fragment() {
             drawerLayout.openDrawer(GravityCompat.START)
         }
 
+        // Set up navigation item selection listener
+        navView.setNavigationItemSelectedListener { menuItem ->
+            handleNavigationItemSelected(menuItem)
+            true
+        }
+
         return view
+    }
+
+    private fun handleNavigationItemSelected(menuItem: MenuItem) {
+        when (menuItem.itemId) {
+            R.id.nav_item1 -> {
+                val intent = Intent(requireContext(), AddAccountActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_item2 -> {
+                val intent = Intent(requireContext(), WhatsNewActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_item3 -> {
+                val intent = Intent(requireContext(), ListeningHistoryActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_item4 -> {
+                // Open SettingsAndPrivacyActivity
+                val intent = Intent(requireContext(), SettingsAndPrivacyActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        drawerLayout.closeDrawer(GravityCompat.START)
     }
 }
