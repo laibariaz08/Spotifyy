@@ -183,6 +183,29 @@
                     android:scaleType="centerCrop"/>
             </LinearLayout>
         </GridLayout>
+        <!-- Favorite Artists Section -->
+        <TextView
+            android:id="@+id/favorite_artists_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite Artists"
+            android:textSize="27sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/second_image_grid"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingStart="16dp"
+            android:textStyle="bold" />
+
+        <RecyclerView
+            android:id="@+id/favorite_artists_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/favorite_artists_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Navigation Drawer -->

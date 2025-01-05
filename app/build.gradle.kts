@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -47,6 +48,12 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.auth)
+    implementation ("com.google.firebase:firebase-auth:21.0.1")
+    implementation ("com.google.android.gms:play-services-tasks:18.0.2")
+    implementation ("com.google.firebase:firebase-firestore:24.0.0'")
+    implementation ("com.google.firebase:firebase-storage:20.0.0")
+    implementation ("com.squareup.picasso:picasso:2.71828")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
